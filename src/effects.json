@@ -1,0 +1,7 @@
+{
+  "village": { "sound": "river" },
+  "desert": { "ambient": "dust", "sound": "wind", "winter": { "ambient": "none" } },
+  "bamboo": { "ambient": "spores", "glint": "#f4e4ff", "sound": "river", "ripples": "purple" },
+  "ruins": { "ambient": "dust", "sound": "wind" },
+  "cave": { "ambient": "embers", "indoor": true, "sound": "wind", "ripples": "purple" }
+}

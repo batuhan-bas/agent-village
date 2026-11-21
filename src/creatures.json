@@ -1,0 +1,2119 @@
+[
+{
+"id": 1,
+"name": "Boy",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 2,
+"name": "Camouflage Green",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 3,
+"name": "Camouflage Red",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 4,
+"name": "Cave Lion",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 5,
+"name": "Cave Lion2",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 6,
+"name": "Cavegirl",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 7,
+"name": "Cavegirl2",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 8,
+"name": "Caveman",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 9,
+"name": "Caveman2",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 10,
+"name": "Child",
+"kind": "character",
+"frames": 2
+},
+{
+"id": 11,
+"name": "Demon Green",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 12,
+"name": "Demon Red",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 13,
+"name": "Egg Boy",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 14,
+"name": "Egg Girl",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 15,
+"name": "Eskimo",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 16,
+"name": "Fighter Red",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 17,
+"name": "Fighter White",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 18,
+"name": "Flam",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 19,
+"name": "Gladiator Blue",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 20,
+"name": "Gold Statue",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 21,
+"name": "Hunter",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 22,
+"name": "Inspector",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 23,
+"name": "Knight",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 24,
+"name": "Knight Gold",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 25,
+"name": "Lion",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 26,
+"name": "Lion Boy",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 27,
+"name": "Lion Orange",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 28,
+"name": "Lion Yellow",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 29,
+"name": "Mask Frog",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item"
+],
+"swim": true
+},
+{
+"id": 30,
+"name": "Mask Gold Racoon",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 31,
+"name": "Mask Racoon",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 32,
+"name": "Master",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 33,
+"name": "Monk",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 34,
+"name": "Monk2",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 35,
+"name": "Monkey",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 36,
+"name": "Monkey Boxer Blue",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 37,
+"name": "Monkey Boxer Red",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 38,
+"name": "Aoi",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 39,
+"name": "Sora",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 40,
+"name": "Bakuro",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 41,
+"name": "Kuro",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 42,
+"name": "Yuki",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 43,
+"name": "Homura",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 44,
+"name": "Haiiro",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 45,
+"name": "Midori",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 46,
+"name": "Konoha",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 47,
+"name": "Yami",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 48,
+"name": "Taiyo",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 49,
+"name": "Kage",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 50,
+"name": "Akane",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 51,
+"name": "Kurenai",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 52,
+"name": "Raiden",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 53,
+"name": "Mizuki",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 54,
+"name": "Hikari",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 55,
+"name": "Noble",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 56,
+"name": "Old Man",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 57,
+"name": "Old Man2",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 58,
+"name": "Old Man3",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 59,
+"name": "Old Woman",
+"kind": "character",
+"frames": 2
+},
+{
+"id": 60,
+"name": "Princess",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 61,
+"name": "Red Gladiator",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 62,
+"name": "Kenji",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"ninja": true
+},
+{
+"id": 63,
+"name": "Robot Camouflage",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 64,
+"name": "Robot Green",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 65,
+"name": "Robot Grey",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 66,
+"name": "Samurai",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 67,
+"name": "Samurai Blue",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 68,
+"name": "Samurai Red",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 69,
+"name": "Shaman",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 70,
+"name": "Shaman Lion",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 71,
+"name": "Skeleton",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 72,
+"name": "Skeleton Demon",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 73,
+"name": "Sorcerer Black",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 74,
+"name": "Sorcerer Orange",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 75,
+"name": "Spirit",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+],
+"fly": true
+},
+{
+"id": 76,
+"name": "Statue",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 77,
+"name": "Sultan",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 78,
+"name": "Sultan2",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 79,
+"name": "Tengu",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 80,
+"name": "Tengu2",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 81,
+"name": "Vampire",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 82,
+"name": "Village6",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 83,
+"name": "Villager",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 84,
+"name": "Villager2",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 85,
+"name": "Villager3",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 86,
+"name": "Villager4",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 87,
+"name": "Villager5",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 88,
+"name": "Villager6",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 89,
+"name": "Woman",
+"kind": "character",
+"frames": 4,
+"poses": [
+"attack",
+"jump",
+"item",
+"dead"
+]
+},
+{
+"id": 90,
+"name": "Axolot",
+"kind": "monster",
+"frames": 4,
+"swim": true
+},
+{
+"id": 91,
+"name": "Axolot Blue",
+"kind": "monster",
+"frames": 4,
+"swim": true
+},
+{
+"id": 92,
+"name": "Bamboo",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 93,
+"name": "Bamboo Yellow",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 94,
+"name": "Bear",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 95,
+"name": "Beast",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 96,
+"name": "Beast2",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 97,
+"name": "Blue Bat",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 98,
+"name": "Butterfly",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 99,
+"name": "Butterfly Blue",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 100,
+"name": "Cyclope",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 101,
+"name": "Cyclope2",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 102,
+"name": "Dragon",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 103,
+"name": "Dragon Yellow",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 104,
+"name": "Eye",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 105,
+"name": "Eye2",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 106,
+"name": "Fish",
+"kind": "monster",
+"frames": 4,
+"fish": true
+},
+{
+"id": 107,
+"name": "Fish Red",
+"kind": "monster",
+"frames": 4,
+"fish": true
+},
+{
+"id": 108,
+"name": "Flam",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 109,
+"name": "Flam2",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 110,
+"name": "Gold Racoon",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 111,
+"name": "Green Octopus",
+"kind": "monster",
+"frames": 4,
+"fish": true
+},
+{
+"id": 112,
+"name": "Grey Trex",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 113,
+"name": "Heart Green",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 114,
+"name": "Heart Red",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 115,
+"name": "Kappa Green",
+"kind": "monster",
+"frames": 4,
+"swim": true
+},
+{
+"id": 116,
+"name": "Kappa Red",
+"kind": "monster",
+"frames": 4,
+"swim": true
+},
+{
+"id": 117,
+"name": "Lantern Green",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 118,
+"name": "Lantern Red",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 119,
+"name": "Larva",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 120,
+"name": "Larva2",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 121,
+"name": "Lizard",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 122,
+"name": "Lizard2",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 123,
+"name": "Mole",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 124,
+"name": "Mole2",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 125,
+"name": "Mollusc",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 126,
+"name": "Mollusc2",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 127,
+"name": "Mouse",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 128,
+"name": "Mouse Black",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 129,
+"name": "Mushroom",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 130,
+"name": "Mushroom2",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 131,
+"name": "Octopus",
+"kind": "monster",
+"frames": 4,
+"fish": true
+},
+{
+"id": 132,
+"name": "Octopus2",
+"kind": "monster",
+"frames": 4,
+"fish": true
+},
+{
+"id": 133,
+"name": "Owl",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 134,
+"name": "Owl2",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 135,
+"name": "Panda",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 136,
+"name": "Racoon",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 137,
+"name": "Red Octopus",
+"kind": "monster",
+"frames": 4,
+"fish": true
+},
+{
+"id": 138,
+"name": "Reptile",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 139,
+"name": "Reptile2",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 140,
+"name": "Skull",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 141,
+"name": "Skull Blue",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 142,
+"name": "Slime",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 143,
+"name": "Slime2",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 144,
+"name": "Slime3",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 145,
+"name": "Slime4",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 146,
+"name": "Snake",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 147,
+"name": "Snake2",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 148,
+"name": "Snake3",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 149,
+"name": "Snake4",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 150,
+"name": "Spider Red",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 151,
+"name": "Spider Yellow",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 152,
+"name": "Spirit",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 153,
+"name": "Spirit2",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 154,
+"name": "Trex",
+"kind": "monster",
+"frames": 4
+},
+{
+"id": 155,
+"name": "Yellows Bat",
+"kind": "monster",
+"frames": 4,
+"fly": true
+},
+{
+"id": 156,
+"name": "Cat",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 157,
+"name": "Cat Black",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 158,
+"name": "Cat Black Yellow",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 159,
+"name": "Cat Cyclop",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 160,
+"name": "Cat Orange",
+"kind": "animal",
+"frames": 2,
+"w": 22,
+"h": 17
+},
+{
+"id": 161,
+"name": "Cat Orange Faceset",
+"kind": "animal",
+"frames": 2,
+"w": 22,
+"h": 17
+},
+{
+"id": 162,
+"name": "Cat White",
+"kind": "animal",
+"frames": 2,
+"w": 17,
+"h": 15
+},
+{
+"id": 163,
+"name": "Cat White Gray",
+"kind": "animal",
+"frames": 2,
+"w": 17,
+"h": 15
+},
+{
+"id": 164,
+"name": "Chicken Black",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 165,
+"name": "Chicken Brown",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 166,
+"name": "Chicken Cute",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 167,
+"name": "Chicken White",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 168,
+"name": "Cow White",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 169,
+"name": "Cow White Side",
+"kind": "animal",
+"frames": 2,
+"w": 24,
+"h": 16
+},
+{
+"id": 170,
+"name": "Dog",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 171,
+"name": "Pup",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 172,
+"name": "Dog Black",
+"kind": "animal",
+"frames": 2,
+"w": 18,
+"h": 17
+},
+{
+"id": 173,
+"name": "Dog Black White",
+"kind": "animal",
+"frames": 2,
+"w": 18,
+"h": 17
+},
+{
+"id": 174,
+"name": "Dog Orange",
+"kind": "animal",
+"frames": 2,
+"w": 18,
+"h": 16
+},
+{
+"id": 175,
+"name": "Dog Orange Brown",
+"kind": "animal",
+"frames": 2,
+"w": 18,
+"h": 16
+},
+{
+"id": 176,
+"name": "Dog Yellow",
+"kind": "animal",
+"frames": 2,
+"w": 21,
+"h": 17
+},
+{
+"id": 177,
+"name": "Dog Yellow Black",
+"kind": "animal",
+"frames": 2,
+"w": 21,
+"h": 17
+},
+{
+"id": 178,
+"name": "Donkey Grey",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 179,
+"name": "Fish Red",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16,
+"fish": true
+},
+{
+"id": 180,
+"name": "Fish White",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16,
+"fish": true
+},
+{
+"id": 181,
+"name": "Fish Yellow",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16,
+"fish": true
+},
+{
+"id": 182,
+"name": "Frog",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16,
+"swim": true
+},
+{
+"id": 183,
+"name": "Hamster",
+"kind": "animal",
+"frames": 2,
+"w": 15,
+"h": 15
+},
+{
+"id": 184,
+"name": "Hamster Brown",
+"kind": "animal",
+"frames": 2,
+"w": 15,
+"h": 13
+},
+{
+"id": 185,
+"name": "Hamster Dark",
+"kind": "animal",
+"frames": 2,
+"w": 15,
+"h": 14
+},
+{
+"id": 186,
+"name": "Hamster Gray",
+"kind": "animal",
+"frames": 2,
+"w": 15,
+"h": 15
+},
+{
+"id": 187,
+"name": "Horse Black",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 188,
+"name": "Horse Brown",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 189,
+"name": "Hyena",
+"kind": "animal",
+"frames": 2,
+"w": 14,
+"h": 13
+},
+{
+"id": 190,
+"name": "Hyena Brown",
+"kind": "animal",
+"frames": 2,
+"w": 14,
+"h": 13
+},
+{
+"id": 191,
+"name": "Lion Orange",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 23
+},
+{
+"id": 192,
+"name": "Lion Red",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 23
+},
+{
+"id": 193,
+"name": "Lion White",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 23
+},
+{
+"id": 194,
+"name": "Lion Yellow",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 23
+},
+{
+"id": 195,
+"name": "Lion Cub",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 196,
+"name": "Little Lion",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 197,
+"name": "Monkey Black",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 198,
+"name": "Monkey Brown",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 199,
+"name": "Monkey Grey",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 200,
+"name": "Parrot Blue",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16,
+"fly": true
+},
+{
+"id": 201,
+"name": "Parrot Red",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16,
+"fly": true
+},
+{
+"id": 202,
+"name": "Racoon",
+"kind": "animal",
+"frames": 2,
+"w": 16,
+"h": 16
+},
+{
+"id": 203,
+"name": "Red Cyclops",
+"kind": "boss",
+"key": "DemonCyclop",
+"frames": 5,
+"w": 50,
+"h": 50,
+"hit": {
+"frames": 3,
+"w": 50,
+"h": 50
+}
+},
+{
+"id": 204,
+"name": "Green Cyclops",
+"kind": "boss",
+"key": "DemonCyclop2",
+"frames": 5,
+"w": 50,
+"h": 50,
+"hit": {
+"frames": 3,
+"w": 50,
+"h": 50
+}
+},
+{
+"id": 205,
+"name": "Giant Bamboo",
+"kind": "boss",
+"key": "GiantBamboo",
+"frames": 6,
+"w": 62,
+"h": 62,
+"hit": {
+"frames": 4,
+"w": 62,
+"h": 62
+}
+},
+{
+"id": 206,
+"name": "Fire Bamboo",
+"kind": "boss",
+"key": "GiantBamboo2",
+"frames": 6,
+"w": 62,
+"h": 62,
+"hit": {
+"frames": 4,
+"w": 62,
+"h": 62
+}
+},
+{
+"id": 207,
+"name": "Giant Blue Samurai",
+"kind": "boss",
+"key": "GiantBlueSamurai",
+"frames": 6,
+"w": 96,
+"h": 48,
+"hit": {
+"frames": 4,
+"w": 96,
+"h": 48
+}
+},
+{
+"id": 208,
+"name": "Giant Flam",
+"kind": "boss",
+"key": "GiantFlam",
+"frames": 5,
+"w": 50,
+"h": 50,
+"hit": {
+"frames": 3,
+"w": 50,
+"h": 50
+}
+},
+{
+"id": 209,
+"name": "Giant Frog",
+"kind": "boss",
+"key": "GiantFrog",
+"frames": 5,
+"w": 40,
+"h": 40,
+"hit": {
+"frames": 3,
+"w": 40,
+"h": 40
+}
+},
+{
+"id": 210,
+"name": "Giant Red Frog",
+"kind": "boss",
+"key": "GiantFrog2",
+"frames": 5,
+"w": 40,
+"h": 40,
+"hit": {
+"frames": 3,
+"w": 40,
+"h": 40
+}
+},
+{
+"id": 211,
+"name": "Giant Racoon",
+"kind": "boss",
+"key": "GiantRacoon",
+"frames": 6,
+"w": 60,
+"h": 60
+},
+{
+"id": 212,
+"name": "Giant Racoon Gold",
+"kind": "boss",
+"key": "GiantRacoonGold",
+"frames": 6,
+"w": 60,
+"h": 60
+},
+{
+"id": 213,
+"name": "Giant Red Samurai",
+"kind": "boss",
+"key": "GiantRedSamurai",
+"frames": 6,
+"w": 96,
+"h": 48,
+"hit": {
+"frames": 4,
+"w": 96,
+"h": 48
+}
+},
+{
+"id": 214,
+"name": "Giant Slime",
+"kind": "boss",
+"key": "GiantSlime",
+"frames": 5,
+"w": 62,
+"h": 52,
+"hit": {
+"frames": 5,
+"w": 62,
+"h": 52
+}
+},
+{
+"id": 215,
+"name": "Giant Green Slime",
+"kind": "boss",
+"key": "GiantSlime2",
+"frames": 5,
+"w": 62,
+"h": 52,
+"hit": {
+"frames": 5,
+"w": 62,
+"h": 52
+}
+},
+{
+"id": 216,
+"name": "Giant Spirit",
+"kind": "boss",
+"key": "GiantSpirit",
+"frames": 5,
+"w": 50,
+"h": 50,
+"hit": {
+"frames": 3,
+"w": 50,
+"h": 50
+}
+},
+{
+"id": 217,
+"name": "Squid Green",
+"kind": "boss",
+"key": "SquidGreen",
+"frames": 4,
+"w": 76,
+"h": 79,
+"hit": {
+"frames": 4,
+"w": 76,
+"h": 79
+}
+},
+{
+"id": 218,
+"name": "Squid Red",
+"kind": "boss",
+"key": "SquidRed",
+"frames": 4,
+"w": 76,
+"h": 79,
+"hit": {
+"frames": 4,
+"w": 76,
+"h": 79
+}
+},
+{
+"id": 219,
+"name": "Tengu Blue",
+"kind": "boss",
+"key": "TenguBlue",
+"frames": 6,
+"w": 68,
+"h": 68,
+"hit": {
+"frames": 8,
+"w": 68,
+"h": 68
+}
+},
+{
+"id": 220,
+"name": "Tengu Red",
+"kind": "boss",
+"key": "TenguRed",
+"frames": 6,
+"w": 82,
+"h": 82,
+"hit": {
+"frames": 8,
+"w": 82,
+"h": 82
+}
+}
+]

@@ -1,0 +1,354 @@
+[
+  {
+    "id": "village",
+    "name": "Agent Village",
+    "width": 640,
+    "height": 576,
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "types": [],
+    "guardian": "GiantSpirit",
+    "music": "33 - Calm Village.ogg",
+    "perches": [
+      [
+        224,
+        224
+      ]
+    ],
+    "stations": {
+      "agent": [
+        320,
+        104
+      ],
+      "read": [
+        128,
+        184
+      ],
+      "bash": [
+        488,
+        184
+      ],
+      "edit": [
+        480,
+        408
+      ],
+      "home": [
+        192,
+        328
+      ],
+      "search": [
+        88,
+        408
+      ],
+      "web": [
+        40,
+        296
+      ]
+    },
+    "anims": [
+      {
+        "name": "flag-red",
+        "x": 288,
+        "y": 32
+      },
+      {
+        "name": "flag-red",
+        "x": 336,
+        "y": 32
+      },
+      {
+        "name": "flag-blue",
+        "x": 400,
+        "y": 112
+      },
+      {
+        "name": "watermill",
+        "x": 544,
+        "y": 416
+      },
+      {
+        "name": "plant",
+        "x": 112,
+        "y": 400,
+        "seasons": [
+          "spring",
+          "summer",
+          "autumn"
+        ]
+      },
+      {
+        "name": "plant",
+        "x": 192,
+        "y": 400,
+        "seasons": [
+          "spring",
+          "summer",
+          "autumn"
+        ]
+      },
+      {
+        "name": "plant",
+        "x": 272,
+        "y": 368,
+        "seasons": [
+          "spring",
+          "summer",
+          "autumn"
+        ]
+      },
+      {
+        "name": "plant",
+        "x": 416,
+        "y": 320,
+        "seasons": [
+          "spring",
+          "summer",
+          "autumn"
+        ]
+      },
+      {
+        "name": "plant",
+        "x": 528,
+        "y": 320,
+        "seasons": [
+          "spring",
+          "summer",
+          "autumn"
+        ]
+      },
+      {
+        "name": "plant",
+        "x": 48,
+        "y": 224,
+        "seasons": [
+          "spring",
+          "summer",
+          "autumn"
+        ]
+      },
+      {
+        "name": "plant",
+        "x": 576,
+        "y": 144,
+        "seasons": [
+          "spring",
+          "summer",
+          "autumn"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bamboo",
+    "name": "Bamboo Marsh",
+    "width": 640,
+    "height": 576,
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "types": [],
+    "guardian": "GiantFrog",
+    "music": "13 - Mystical.ogg",
+    "perches": [
+      [
+        320,
+        48
+      ],
+      [
+        560,
+        32
+      ]
+    ],
+    "stations": {
+      "search": [
+        216,
+        312
+      ],
+      "agent": [
+        320,
+        120
+      ],
+      "read": [
+        120,
+        120
+      ],
+      "home": [
+        504,
+        120
+      ],
+      "bash": [
+        520,
+        280
+      ],
+      "edit": [
+        488,
+        456
+      ],
+      "web": [
+        312,
+        536
+      ]
+    },
+    "anims": []
+  },
+  {
+    "id": "cave",
+    "name": "Deep Cave",
+    "width": 640,
+    "height": 576,
+    "seasons": [
+      "day"
+    ],
+    "types": [
+      "rock"
+    ],
+    "guardian": "GiantSlime",
+    "music": "2 - The Cave.ogg",
+    "perches": [
+      [
+        224,
+        96
+      ],
+      [
+        448,
+        216
+      ]
+    ],
+    "stations": {
+      "web": [
+        344,
+        72
+      ],
+      "home": [
+        120,
+        152
+      ],
+      "read": [
+        496,
+        144
+      ],
+      "bash": [
+        128,
+        360
+      ],
+      "edit": [
+        504,
+        360
+      ],
+      "search": [
+        144,
+        456
+      ],
+      "agent": [
+        360,
+        424
+      ]
+    },
+    "anims": []
+  },
+  {
+    "id": "ruins",
+    "name": "Old Ruins",
+    "width": 640,
+    "height": 576,
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "types": [
+      "rock"
+    ],
+    "guardian": "GiantRedSamurai",
+    "music": "30 - Ruins.ogg",
+    "perches": [],
+    "stations": {
+      "agent": [
+        312,
+        136
+      ],
+      "read": [
+        120,
+        168
+      ],
+      "home": [
+        496,
+        152
+      ],
+      "bash": [
+        88,
+        456
+      ],
+      "edit": [
+        520,
+        456
+      ],
+      "search": [
+        208,
+        432
+      ],
+      "web": [
+        328,
+        552
+      ]
+    },
+    "anims": []
+  },
+  {
+    "id": "desert",
+    "name": "Sand Camp",
+    "width": 640,
+    "height": 576,
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "types": [
+      "rock"
+    ],
+    "guardian": "GiantRacoonGold",
+    "music": "23 - Road.ogg",
+    "perches": [],
+    "stations": {
+      "agent": [
+        280,
+        104
+      ],
+      "home": [
+        168,
+        136
+      ],
+      "read": [
+        104,
+        232
+      ],
+      "edit": [
+        136,
+        440
+      ],
+      "bash": [
+        480,
+        264
+      ],
+      "search": [
+        392,
+        440
+      ],
+      "web": [
+        288,
+        552
+      ]
+    },
+    "anims": []
+  }
+]
