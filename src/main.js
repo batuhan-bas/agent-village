@@ -1284,27 +1284,32 @@ function summonDragon() {
 function drawDragon(dt) {
   if ((nextDragon -= dt) <= 0) { nextDragon = rnd(300, 600); summonDragon(); }
   if (!dragon) return;
+  // Seen from above, as in the pack: the head faces the viewer, round body segments trail behind
+  // it along its path, two wings beat on the first segment, and the tail spike points backwards.
   const d = dragon, img = (n) => art(dragonImgs, `art/dragon/${n}.png`, n);
   d.t += dt; d.x += d.dir * 70 * dt;
   const y = d.y0 + Math.sin(d.t * 1.6) * 22;
-  d.trail.unshift([d.x, y]); if (d.trail.length > 90) d.trail.pop();
-  if ((d.dir > 0 && d.x > W + 260) || (d.dir < 0 && d.x < -260)) { dragon = null; return; }
-  const parts = ["body1", "body2", "body1", "body2", "body1", "bodyend"];
-  ctx.fillStyle = "rgba(0,0,0,.14)"; // shadow on the ground, far below
-  ctx.beginPath(); ctx.ellipse(d.x - d.dir * 40, y + 90, 60, 8, 0, 0, Math.PI * 2); ctx.fill();
-  for (let i = parts.length - 1; i >= 0; i--) { // tail first, so the head is on top
-    const p = d.trail[Math.min(d.trail.length - 1, (i + 1) * 10)], im = img(parts[i]);
-    if (!im || !p) continue;
-    ctx.save(); ctx.translate(snap(p[0]), snap(p[1])); if (d.dir < 0) ctx.scale(-1, 1);
-    ctx.drawImage(im, -im.width / 2, -im.height / 2);
-    if (i === 0) { // wings on the first segment
-      const wing = img("wing"), flap = .55 + .45 * Math.sin(d.t * 7);
-      if (wing) { ctx.scale(1, flap); ctx.drawImage(wing, -wing.width / 2, -wing.height); }
-    }
-    ctx.restore();
+  const last = d.trail[0];
+  if (!last || Math.hypot(d.x - last[0], y - last[1]) >= 2) { d.trail.unshift([d.x, y]); if (d.trail.length > 80) d.trail.pop(); }
+  if ((d.dir > 0 && d.x > W + 200) || (d.dir < 0 && d.x < -200)) { dragon = null; return; }
+  const at = (k) => d.trail[Math.min(d.trail.length - 1, k)] || [d.x, y]; // trail points are 2px apart
+  const segs = [at(9), at(18), at(27), at(36)], tail = at(46), base = at(40);
+  ctx.fillStyle = "rgba(0,0,0,.12)"; // its shadow on the ground, far below
+  ctx.beginPath(); ctx.ellipse(d.x - d.dir * 30, y + 90, 50, 7, 0, 0, Math.PI * 2); ctx.fill();
+  const put = (im, x, yy) => im && ctx.drawImage(im, snap(x - im.width / 2), snap(yy - im.height / 2));
+  const end = img("bodyend");
+  if (end) { // the spike's tip is at the bottom of its image: turn it to point away from the body
+    ctx.save(); ctx.translate(snap(tail[0]), snap(tail[1]));
+    ctx.rotate(Math.atan2(tail[1] - base[1], tail[0] - base[0]) - Math.PI / 2);
+    ctx.drawImage(end, -end.width / 2, -end.height / 2 - 6); ctx.restore();
   }
-  const head = img("head");
-  if (head) { ctx.save(); ctx.translate(snap(d.x), snap(y)); if (d.dir < 0) ctx.scale(-1, 1); ctx.drawImage(head, -head.width / 2 + 8, -head.height / 2); ctx.restore(); }
+  for (let i = segs.length - 1; i >= 0; i--) put(img(i % 2 ? "body2" : "body1"), ...segs[i]);
+  const wing = img("wing"), flap = .55 + .45 * Math.sin(d.t * 7);
+  if (wing) for (const side of [1, -1]) { // the image is the right wing, its root at the bottom left
+    ctx.save(); ctx.translate(snap(segs[0][0] + side * 6), snap(segs[0][1] - 4)); ctx.scale(side, flap);
+    ctx.drawImage(wing, -4, -wing.height + 6); ctx.restore();
+  }
+  put(img("head"), d.x, y - 4);
 }
 
 // ---------- shuriken ----------
@@ -1680,7 +1685,7 @@ function drawCard() {
     const w = ctx.measureText(label).width + 8;
     ctx.fillStyle = "#2a1c12"; ctx.fillRect(tx, by + sy + 39, w + 2, 13);
     ctx.fillStyle = bg; ctx.fillRect(tx + 1, by + sy + 40, w, 11);
-    ctx.fillStyle = fg; ctx.fillText(label, tx + 5, by + sy + 42);
+    ctx.fillStyle = fg; ctx.textBaseline = "middle"; ctx.fillText(label, tx + 5, by + sy + 46); ctx.textBaseline = "top"; // centred in the badge
     tx += w + 5;
   }
   // details
@@ -1884,7 +1889,7 @@ window.addEventListener("blur", () => { if (menu) closeMenu(); });
 // Subscribe before the map loads: hooks can fire while the PNGs are still decoding,
 // and Tauri drops events nobody is listening for. onEvent only touches actor state.
 TAURI?.event.listen("agent-event", (e) => onEvent(e.payload));
-window.agentVillage = { onEvent, loadMap, populate, settings, actors, dropBerry }; // handy for poking from devtools
+window.agentVillage = { onEvent, loadMap, populate, settings, actors, dropBerry, summonDragon }; // handy for poking from devtools
 
 (async function () {
   maps = await (await fetch("maps.json")).json();
