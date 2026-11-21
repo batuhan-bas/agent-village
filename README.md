@@ -10,7 +10,16 @@ A small desktop window (macOS and Windows) with a pixel village in it. Every Cla
 
 Built with Tauri 2. The Rust side listens on `127.0.0.1:4343/event` and passes each hook payload to the canvas front end. It only accepts requests from hooks: anything a web browser sends (it carries an `Origin` header) is turned away, so an open web page can't post fake events to the village.
 
-## Run
+## Download
+
+Get the latest version from [Releases](https://github.com/batuhan-bas/agent-village/releases/latest):
+
+- **macOS** (Apple Silicon and Intel): `Agent Village_<version>_universal.dmg`, signed and notarized. Open it and drag the app to Applications.
+- **Windows**: the `.msi` or the `-setup.exe` installer. They are not signed yet, so SmartScreen may warn on first launch: choose "More info", then "Run anyway".
+
+On first launch the app offers to connect your agents (see below).
+
+## Run from source
 
 ```bash
 npm install
@@ -82,3 +91,18 @@ All art and audio come from the [Ninja Adventure asset pack](https://pixel-boy.i
 - `npm run actors -- <pack>` copies the characters, monsters, animals and guardians into `src/art/actors/` and lists them in `src/creatures.json` with what each one can do (fly, swim, or live in the water only). It also copies their extra poses, the guardians' hit animations, the effects, food, items, emotes, dialog boxes, the wood theme used by the menu, the pixel font, animated map pieces, particles and the dragon. Pigs are left out on purpose.
 - `python3 scripts/import-audio.py <pack>` copies the sound effects into `src/audio/`, and converts the ambient loops and the music the maps use to AAC (it needs ffmpeg).
 - `npm test` checks that, on every map, every station can reach every other one without walking through anything, and that the example hook files forward every event the app reacts to. `cargo test` in `src-tauri` checks that connecting adds the hooks once, keeps your own settings, and that disconnecting puts the file back as it was.
+
+## Releasing
+
+Bump the version in `package.json`, `src-tauri/tauri.conf.json` and `src-tauri/Cargo.toml`, then push a tag such as `v0.2.0`. GitHub Actions builds the Windows installers and puts them on a draft release. The Mac build is signed and notarized on a Mac with the Developer ID certificate and uploaded to the same release:
+
+```bash
+APPLE_SIGNING_IDENTITY="Developer ID Application: Calexis Labs OU (B5XU49S3PN)" npx tauri build --target universal-apple-darwin
+DMG="src-tauri/target/universal-apple-darwin/release/bundle/dmg/Agent Village_0.2.0_universal.dmg"
+codesign -s "Developer ID Application: Calexis Labs OU (B5XU49S3PN)" "$DMG"
+xcrun notarytool submit "$DMG" --keychain-profile agent-village --wait
+xcrun stapler staple "$DMG"
+gh release upload v0.2.0 "$DMG"
+```
+
+The `agent-village` keychain profile is made once with `xcrun notarytool store-credentials`. When both builds are on the draft, publish it from the Releases page.

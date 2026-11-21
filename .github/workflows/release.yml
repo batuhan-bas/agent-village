@@ -1,0 +1,31 @@
+# On a version tag (v0.1.0 ...) builds the Windows installers and puts them on a draft release.
+# The Mac .dmg is signed and notarized with the Calexis Labs Developer ID on a Mac and uploaded
+# to the same release by hand (see README, "Releasing").
+name: release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+      - run: npm ci
+      - uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: Agent Village ${{ github.ref_name }}
+          releaseDraft: true
+          releaseBody: See the README for how to connect your agents.
