@@ -44,16 +44,16 @@ fn write(path: &PathBuf, v: &Value) -> Result<(), String> {
     fs::rename(&tmp, path).map_err(err)
 }
 
-/// Adds our hook to every event in the template that doesn't have one yet; everything else in
-/// the settings stays as it was.
+/// Replaces our hooks with the template's: any we added before (including the older `http`
+/// ones) come out first, so connecting again upgrades them without doubling up. Everything
+/// else in the settings stays as it was.
 pub fn connect(settings: &mut Value, template: &Value) -> Result<(), String> {
-    let root = settings.as_object_mut().ok_or("the settings file is not a JSON object")?;
-    let hooks = root.entry("hooks").or_insert_with(|| json!({})).as_object_mut().ok_or("\"hooks\" is not an object")?;
+    settings.as_object().ok_or("the settings file is not a JSON object")?;
+    disconnect(settings);
+    let hooks = settings.as_object_mut().unwrap().entry("hooks").or_insert_with(|| json!({})).as_object_mut().ok_or("\"hooks\" is not an object")?;
     for (event, groups) in template["hooks"].as_object().into_iter().flatten() {
         let list = hooks.entry(event.clone()).or_insert_with(|| json!([])).as_array_mut().ok_or(format!("hooks.{event} is not a list"))?;
-        if !list.iter().any(ours) {
-            list.extend(groups.as_array().into_iter().flatten().cloned());
-        }
+        list.extend(groups.as_array().into_iter().flatten().cloned());
     }
     Ok(())
 }
@@ -159,6 +159,36 @@ mod tests {
         assert!(set_hooks("claude".into(), true).is_err());
         assert_eq!(fs::read_to_string(&file).unwrap(), "{ not json", "a broken file must be left alone");
         fs::remove_dir_all(&home).unwrap();
+    }
+
+    #[test]
+    fn connect_replaces_the_old_http_hooks() {
+        let http = json!({ "type": "http", "url": "http://127.0.0.1:4343/event", "timeout": 1 });
+        let mine = json!({ "type": "command", "command": "lint.sh" });
+        let mut s = json!({ "hooks": {
+            "PreToolUse": [{ "matcher": "Bash", "hooks": [mine.clone()] }, { "matcher": "*", "hooks": [http.clone()] }],
+            "Stop": [{ "hooks": [http.clone()] }]
+        } });
+        connect(&mut s, &serde_json::from_str(CLAUDE).unwrap()).unwrap();
+        assert!(!s.to_string().contains("\"http\""), "the old http hooks must be gone");
+        for (event, list) in s["hooks"].as_object().unwrap() {
+            let handlers: Vec<&Value> = list.as_array().unwrap().iter().flat_map(|g| g["hooks"].as_array().unwrap()).filter(|h| ours(h)).collect();
+            assert_eq!(handlers.len(), 1, "{event}: exactly one hook of ours");
+            assert_eq!(handlers[0]["type"], "command", "{event}");
+        }
+        assert_eq!(s["hooks"]["PreToolUse"][0]["hooks"][0], mine, "the user's own hook must stay first");
+    }
+
+    #[test]
+    fn claude_hooks_never_fail_or_print() {
+        let template: Value = serde_json::from_str(CLAUDE).unwrap();
+        for (event, list) in template["hooks"].as_object().unwrap() {
+            let h = &list[0]["hooks"][0];
+            assert_eq!(h["type"], "command", "{event}");
+            let cmd = h["command"].as_str().unwrap();
+            assert!(cmd.contains("-s ") && cmd.contains("-o /dev/null") && cmd.ends_with("|| true"), "{event}: {cmd}");
+            assert!(event == "SessionEnd" || h["async"] == true, "{event} must run in the background");
+        }
     }
 
     #[test]

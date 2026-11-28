@@ -1,10 +1,10 @@
 {
   "hooks": {
-    "SubagentStart": [{ "hooks": [{ "type": "http", "url": "http://127.0.0.1:4343/event", "timeout": 1 }] }],
-    "SubagentStop":  [{ "hooks": [{ "type": "http", "url": "http://127.0.0.1:4343/event", "timeout": 1 }] }],
-    "PreToolUse":    [{ "matcher": "*", "hooks": [{ "type": "http", "url": "http://127.0.0.1:4343/event", "timeout": 1 }] }],
-    "PostToolUseFailure": [{ "matcher": "*", "hooks": [{ "type": "http", "url": "http://127.0.0.1:4343/event", "timeout": 1 }] }],
-    "Stop":          [{ "hooks": [{ "type": "http", "url": "http://127.0.0.1:4343/event", "timeout": 1 }] }],
-    "SessionEnd":    [{ "hooks": [{ "type": "http", "url": "http://127.0.0.1:4343/event", "timeout": 1 }] }]
+    "SubagentStart": [{"hooks": [{"type": "command", "async": true, "timeout": 2, "command": "curl -s -m 1 -o /dev/null -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:4343/event || true"}]}],
+    "SubagentStop": [{"hooks": [{"type": "command", "async": true, "timeout": 2, "command": "curl -s -m 1 -o /dev/null -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:4343/event || true"}]}],
+    "PreToolUse": [{"matcher": "*", "hooks": [{"type": "command", "async": true, "timeout": 2, "command": "curl -s -m 1 -o /dev/null -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:4343/event || true"}]}],
+    "PostToolUseFailure": [{"matcher": "*", "hooks": [{"type": "command", "async": true, "timeout": 2, "command": "curl -s -m 1 -o /dev/null -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:4343/event || true"}]}],
+    "Stop": [{"hooks": [{"type": "command", "async": true, "timeout": 2, "command": "curl -s -m 1 -o /dev/null -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:4343/event || true"}]}],
+    "SessionEnd": [{"hooks": [{"type": "command", "timeout": 2, "command": "curl -s -m 1 -o /dev/null -X POST -H 'Content-Type: application/json' --data-binary @- http://127.0.0.1:4343/event || true"}]}]
   }
 }

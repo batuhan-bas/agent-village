@@ -39,8 +39,10 @@ The app doesn't look for agents on its own. Claude Code and Codex tell it what t
 
 On the first run the app asks whether to connect the agents it finds on your machine, and adds its hooks to their settings for you. Everything else in those files stays as it was, and the old file is kept next to it as `*.agent-village-backup`. Later you can switch each one on or off from the right-click menu, under **Agents**.
 
-- **Claude Code** gets `http` hooks in `~/.claude/settings.json`, which post each payload straight to the app. The `SessionEnd` hook is what sends a session's ninja back to waiting when you exit, `/clear` or switch sessions.
-- **Codex** runs command hooks only, so `~/.codex/hooks.json` pipes each payload to the app with `curl` (in the background, with a one-second timeout, and silent when the app isn't running; it uses `curl.exe` on Windows). Open `/hooks` in Codex once to review and trust the new hooks, because Codex skips hooks it hasn't been told to trust.
+Both get command hooks that pipe each payload to the app with `curl`, in the background, with a one-second timeout. When the app isn't running they stay silent and never hold up the agent.
+
+- **Claude Code** gets them in `~/.claude/settings.json`. The `SessionEnd` hook waits for `curl` instead of running in the background, because it fires while the session closes; it is what sends a session's ninja back to waiting when you exit, `/clear` or switch sessions. Earlier versions used `http` hooks here, which made Claude Code warn on every tool call while the app was closed. Connecting again (right-click, **Agents**, off and on) replaces them.
+- **Codex** gets them in `~/.codex/hooks.json` (it uses `curl.exe` on Windows). Open `/hooks` in Codex once to review and trust the new hooks, because Codex skips hooks it hasn't been told to trust.
 
 To set them up by hand instead, merge `hooks/claude-settings.example.json` or `hooks/codex-hooks.example.json` into those files; they are the same hooks the app adds.
 
