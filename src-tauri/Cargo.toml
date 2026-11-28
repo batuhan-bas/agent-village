@@ -1,6 +1,6 @@
 [package]
 name = "agent-village"
-version = "1.0.1"
+version = "1.0.2"
 description = "Watch your coding agents work in a pixel village"
 authors = ["batuhan-bas"]
 edition = "2024"
